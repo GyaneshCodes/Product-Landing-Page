@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color1: #f0f8ff;
+    --color2: #006aff;
+    --color3: #000;
+    --border-color: #87CEEB;
+    --shadow-color: #AFDBF5;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--color1);
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--color1);
+}
+
+#header #header-img {
+    margin: 0 20px;
+    width: 60px;
+}
+
+#nav-bar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+ul li {
+    margin: 0 50px;
+    font-size: 1.6rem;
+}
+
+li .nav-link {
+    text-decoration: none;
+    color: var(--color3);
+}
+
+li .nav-link:hover {
+    text-decoration: underline;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#input-section {
+    margin: 40px;
+}
+
+#form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin: 20px;
+}
+
+#form input {
+    width: 70%;
+    height: 30px;
+    padding: 3px 10px;
+    border: 1px solid var(--color2);
+    outline: none;
+}
+
+#form #submit {
+    margin: 20px;
+    width: 50%;
+    background-color: var(--color2);
+    color: var(--color1);
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#form #submit:hover {
+    background-color: var(--color1);
+    border: 2px solid var(--color2);
+    color: var(--color2);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 20px 5px;
+}
+
+#Features h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#Features ul {
+    padding: 10px;
+}
+
+#Features ul li {
+    font-size: 1.6rem;
+    margin: 5px 5%;
+}
+
+#Features #video {
+    margin: 20px;
+}
+
+#How_It_Works {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.working-info {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.info {
+    width: 70%;
+    height: 60%;
+    background-color: var(--color1);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 25px 5px var(--shadow-color);
+    padding: 10px;
+}
+
+.info h3 {
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.info p {
+    font-size: 1.3rem;
+    margin: 10px 5px;
+}
+
+#Pricing {
+    width: 100%;
+    margin: 50px;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+    gap: 10px;
+}
+
+.card {
+    width: auto;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color1);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 15px 3px var(--shadow-color);
+}
+
+.card h2 {
+    font-size: 2.4rem;
+    color: var(--color2);
+}
+
+.card h3 {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.card ul {
+    margin: 5px;
+}
+
+.card .select {
+    width: 120px;
+    height: 35px;
+    margin: 25px;
+    background-color: var(--color2);
+    color: var(--color1);
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.card .select:hover {
+    border: 2px solid var(--color2);
+    background-color: var(--color1);
+    color: var(--color2);
+    box-shadow: 0 0 10px 1px var(--color2);
+}
+
+#footer {
+    width: 100%;
+    height: 70px;
+    background-color: var(--color2);
+    color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: var(--color1);
+}
+
+#footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* @media only screen and (max-width: 769px) {
+    #Pricing {
+        width: 100%;
+        height: 80vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
+    }
+} */
+
+@media only screen and (max-width: 426px) {
+    h1 {
+        font-size: 2.5rem;
+        margin: 16px;
+    }
+}
